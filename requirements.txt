@@ -1,8 +1,0 @@
-streamlit
-pandas
-chromadb
-uuid
-langchain_groq
-langchain_core
-langchain_community
-python-dotenv
