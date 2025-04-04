@@ -92,7 +92,7 @@ Before starting, ensure you have the following:
 ### **2. Clone the Repository**
 Clone the project repository to your local machine:
 ```bash
-git clone https://github.com/your-username/coldemail-gen.git
+git clone https://github.com/jansh7784/coldemail-gen.git
 cd coldemail-gen
 ```
 
