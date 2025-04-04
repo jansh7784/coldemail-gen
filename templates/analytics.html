@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="bg-gray-100">
+    <nav class="bg-white shadow-lg p-4">
+        <div class="container mx-auto">
+            <h1 class="text-2xl font-bold text-gray-800">Analytics Dashboard</h1>
+        </div>
+    </nav>
+
+    <main class="container mx-auto mt-8 p-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Skills Chart -->
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h2 class="text-xl font-semibold mb-4">Popular Skills</h2>
+                <canvas id="skillsChart"></canvas>
+            </div>
+
+            <!-- Job Types Chart -->
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h2 class="text-xl font-semibold mb-4">Job Types</h2>
+                <canvas id="jobTypesChart"></canvas>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        async function loadAnalytics() {
+            try {
+                const response = await fetch('/api/analytics/data');
+                const data = await response.json();
+
+                // Skills Chart
+                new Chart(document.getElementById('skillsChart'), {
+                    type: 'bar',
+                    data: {
+                        labels: data.popular_skills.map(item => item.skill),
+                        datasets: [{
+                            label: 'Skill Usage',
+                            data: data.popular_skills.map(item => item.count),
+                            backgroundColor: 'rgba(54, 162, 235, 0.5)'
+                        }]
+                    }
+                });
+
+                // Job Types Chart
+                new Chart(document.getElementById('jobTypesChart'), {
+                    type: 'pie',
+                    data: {
+                        labels: data.job_types.map(item => item.type),
+                        datasets: [{
+                            data: data.job_types.map(item => item.count),
+                            backgroundColor: [
+                                'rgba(255, 99, 132, 0.5)',
+                                'rgba(54, 162, 235, 0.5)',
+                                'rgba(255, 206, 86, 0.5)'
+                            ]
+                        }]
+                    }
+                });
+            } catch (error) {
+                console.error('Error loading analytics:', error);
+            }
+        }
+
+        loadAnalytics();
+    </script>
+</body>
+</html>
