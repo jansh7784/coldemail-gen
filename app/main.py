@@ -196,7 +196,7 @@ def create_streamlit_app():
             """
             <div style='text-align: center'>
                 <p>Created by Ansh Jain</p>
-                <a href='https://www.linkedin.com/in/your-profile' target='_blank'>
+                <a href='https://www.linkedin.com/in/ansh--jain' target='_blank'>
                     Connect on LinkedIn
                 </a>
             </div>
