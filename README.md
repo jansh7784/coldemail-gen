@@ -1,6 +1,3 @@
-Here's the corrected and aligned `README.md` file for your project:
-
-```markdown
 # **Cold Email Generator**
 
 The **Cold Email Generator** is a web application designed to automate the process of creating personalized cold emails for job applications. It simplifies the tedious task of writing tailored emails by providing a user-friendly interface and leveraging AI and machine learning techniques.
@@ -246,12 +243,7 @@ This project is licensed under the MIT License. See the `LICENSE` file for detai
 ## **Contact**
 For any questions or feedback, feel free to reach out:
 - **Email**: jansh7784@gmail.com
-- **GitHub**: [your-username](https://github.com/jansh7784)
-- **LinkedIn**: [Your Name](https://linkedin.com/in/ansh--jain)
+- **GitHub**: [Ansh Jain](https://github.com/jansh7784)
+- **LinkedIn**: [Ansh Jain](https://linkedin.com/in/ansh--jain)
 
----
 
-This `README.md` provides a complete overview of your project, including deployment instructions for both the Flask API and Streamlit frontend on Render. Let me know if you need further adjustments.
-```
-
-You can copy and replace the content of your current `README.md` file with the above improved version.
