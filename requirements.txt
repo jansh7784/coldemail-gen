@@ -10,3 +10,5 @@ python-docx>=1.0.0  # Changed from docx to python-docx
 requests>=2.31.0
 flask>=3.0.0
 gunicorn
+flask-cors>=3.0.10
+flask-api
