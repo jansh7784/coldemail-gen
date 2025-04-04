@@ -2,7 +2,7 @@
 
 The **Cold Email Generator** is a web application designed to automate the process of creating personalized cold emails for job applications. It simplifies the tedious task of writing tailored emails by providing a user-friendly interface and leveraging AI and machine learning techniques.
 
-Check Live := https://coldemail-frontend.onrender.com/
+Check Live :- https://coldemail-frontend.onrender.com/
 
 ## **Overview**
 - A **Streamlit frontend** for user interaction.
