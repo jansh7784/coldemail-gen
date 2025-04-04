@@ -184,7 +184,7 @@ def create_streamlit_app():
     # Instructions Section (Right)
     with col2:
         with st.expander("📋 Instructions", expanded=True):
-            st.write("1. **Upload your resume (optional)**")
+            st.write("1. **Upload your resume ")
             st.write("2. **Enter job URLs (one per line)**")
             st.write("3. **Click 'Generate Emails'**")
             st.write("4. **Review and customize emails**")
