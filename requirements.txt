@@ -12,7 +12,6 @@ flask>=3.0.0
 gunicorn
 flask-cors>=3.0.10
 flask-api
-BeautifulSoup
-bs4
-
-
+beautifulsoup4
+numpy
+scikit-learn
