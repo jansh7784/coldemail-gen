@@ -19,10 +19,6 @@ Pillow
 PyYAML
 gunicorn
 numpy
-opencv-python
 openai
 pandas
-python-dotenv
-requests
-scikit-learn
-streamlit
+
